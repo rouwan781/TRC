@@ -1,0 +1,68 @@
+{
+  "apiNodes": [
+    {
+      "name": "TRONGrid Mainnet",
+      "url": "https://api.trongrid.io",
+      "priority": 1,
+      "enabled": true,
+      "type": "mainnet"
+    },
+    {
+      "name": "TRONGrid Shasta",
+      "url": "https://api.shasta.trongrid.io",
+      "priority": 2,
+      "enabled": true,
+      "type": "testnet"
+    },
+    {
+      "name": "Ankr Mainnet",
+      "url": "https://rpc.ankr.com/http/tron",
+      "priority": 3,
+      "enabled": true,
+      "type": "mainnet"
+    },
+    {
+      "name": "Tron Public Node 1",
+      "url": "https://tron-mainnet.token.im",
+      "priority": 4,
+      "enabled": true,
+      "type": "mainnet"
+    },
+    {
+      "name": "Tron Public Node 2",
+      "url": "https://tron-mainnet.s.chainbase.com",
+      "priority": 5,
+      "enabled": true,
+      "type": "mainnet"
+    },
+    {
+      "name": "TronScan API",
+      "url": "https://apilist.tronscanapi.com",
+      "priority": 6,
+      "enabled": true,
+      "type": "mainnet"
+    },
+    {
+      "name": "TRON Community",
+      "url": "https://api.troncommunity.net",
+      "priority": 7,
+      "enabled": true,
+      "type": "mainnet"
+    }
+  ],
+  "settings": {
+    "apiTimeout": 10000,
+    "maxRetries": 3,
+    "requestDelay": 200,
+    "healthCheckInterval": 300000,
+    "maxQueueSize": 1000,
+    "maxHistorySize": 1000
+  },
+  "contracts": {
+    "usdt": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+    "usdc": "TEkxiTehnzSmSe2XqrBj4w32RUN966rdz8",
+    "jst": "TCFLL5dx5ZJdKnWuesXxi1VPwjLVmWZZy9",
+    "sun": "TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S",
+    "wtrx": "TNUC9Qb1rRpS5CbWLmNMxXBjyFoydXjWFR"
+  }
+}

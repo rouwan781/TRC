@@ -1,0 +1,47 @@
+{
+  "name": "tron-scanner-pro",
+  "version": "5.0.0",
+  "description": "TRON助记词扫描器专业版 - 企业级区块链地址扫描系统",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=8080 --host=localhost",
+    "build": "node build.js",
+    "test": "echo \"Running tests...\" && exit 0",
+    "lint": "eslint js/",
+    "minify": "uglifyjs js/*.js -c -m -o dist/js/app.min.js",
+    "compress": "gzip -k dist/js/app.min.js",
+    "deploy": "npm run build && npm run minify && npm run compress"
+  },
+  "keywords": [
+    "tron",
+    "scanner",
+    "blockchain",
+    "crypto",
+    "bip39",
+    "address",
+    "wallet"
+  ],
+  "author": "TRON Scanner Team",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "eslint": "^8.56.0",
+    "uglify-js": "^3.17.4",
+    "clean-css-cli": "^5.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tron-scanner/tron-scanner-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tron-scanner/tron-scanner-pro/issues"
+  },
+  "homepage": "https://tron-scanner.github.io",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
